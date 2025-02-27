@@ -2,17 +2,21 @@ gryffindor=0
 ravenclaw=0
 hufflepuff=0
 slytherin=0
+answer=0
 
 print("Do you like Dawn or Dusk? 1) Dawn 2) Dusk")
 answer=int(input("enter your answer (1-2):"))
+while answer != 1 or answer != 2:
+    print("wrong input.")
+    answer=int(input("enter your answer (1-2):"))
 if answer == 1:
   gryffindor += 1 
   ravenclaw += 1
 elif answer == 2:
   hufflepuff += 1 
   slytherin += 1
-else:
-  print("wrong input")
+
+
 
 print("When I’m dead, I want people to remember me as: 1) The Good 2) The Great 3) The Wise 4) The Bold")
 answer=int(input("enter your answer (1-4):"))
